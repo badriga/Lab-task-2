@@ -1,0 +1,150 @@
+#Part 1: Selection control flow
+##Electricity Bill
+
+#Get the units consumed from the user.
+'''units = int(input("Enter the units consumed: "))
+
+if units <= 100:
+    bill = units * 2
+elif units <= 200:
+    bill = units * 3
+else:
+    bill = units * 5
+
+print("Total Electricity Bill: ₹", bill)
+
+# Largest of Three Numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    print("Largest number is:", a)
+
+elif b >= a and b >= c:
+    print("Largest number is:", b)
+
+else:
+    print("Largest number is:", c)
+
+#Grade Calculator
+a=90
+b=89
+c=67
+d=85
+e=74
+print("add:",a+b+c+d+e)
+total = a+b+c+d+e
+average = total/5
+
+if average >=90:
+   print("Grade A:")
+elif average >=80:
+   print("Grade B:")
+elif average >=70:
+   print("Grade C:")
+elif average >=60:
+   print("Grade D:")
+else:
+    print("Fail")
+#ATM Withdrawal
+
+balance = int(input("Enter your account balance: "))
+amount = int(input("Enter withdrawal amount: "))
+
+if amount <= 0:
+    print("Invalid withdrawal amount")
+
+elif amount % 100 != 0:
+    print("Withdrawal amount must be divisible by 100")
+
+elif amount > balance:
+    print("Insufficient balance")
+
+else:
+    balance = balance - amount
+    print("Withdrawal successful!")
+    print("Remaining balance:", balance)
+#Triangle Type
+a=int(input("enter value of side 1:"))
+b=int(input("enter value of side 2:"))
+c=int(input("enter value of side 3:"))
+if a + b > c and b + c > a and a + c > b:
+    if a == b and b == c:
+        print("Equilateral Triangle")
+
+    elif a == b or b == c or a == c:
+        print("Isosceles Triangle")
+
+    else:
+        print("Scalene Triangle")
+else:
+    print("invalid triangle:")
+### Part 2: For Loop – Increment & Decrement
+#Multiples with Conditions
+for a in range(1, 101):
+
+    if a % 3 == 0 and a % 5 == 0:
+        print("Python Java")
+
+    elif a % 3 == 0:
+        print("Python")
+
+    elif a % 5 == 0:
+        print("Java")
+
+    else:
+        print(a)
+#Prime Numbers
+a=int(input("enter user number:"))
+for i in range(1,a+1):
+   if i%2==0:
+       print(i)
+#Odd Numbers
+a=int(input("enter user number:"))
+for i in range(1,a+1):
+   if i%2!=0:
+       print(i)
+#Multiplication Table
+a=int(input("enter user number:"))
+for i in range(1,11):
+   print(i,'*',a,'=',i*a)
+#Digit Sum
+a=int(input("enter the number:"))
+s=0
+for i in range(1,a+1):
+    s+=i
+print("sum of digits:",s)
+#Count vowels and consonants
+a = input("Enter a string: ")
+
+vowels = 0
+consonants = 0
+
+for i in a:
+    if i in "aeiouAEIOU":
+        vowels = vowels + 1
+
+    elif i.isalpha():
+        consonants = consonants + 1
+
+print("Vowels:", vowels)
+print("Consonants:", consonants)
+
+###Part 3: Nested For Loop
+#Hollow square
+for i in range (5):
+    for j in range (5):
+        if i==0 or i==4 or j==0 or j==4:
+           print("*", end =" ")
+        else:
+           print(" ",end = " ")
+    print()'''
+#Number Triangle
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+          
+
+
